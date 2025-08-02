@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <body>
-
-    <h1>🌍 Wireshark WHOIS Plugin</h1>
-
+    <h1>🌍 Wireshark WHOIS Plugin </h1>
+    <hr />
     <p>
         A powerful and flexible Lua plugin for Wireshark that brings WHOIS lookups directly to your fingertips. Analyze network traffic and get detailed IP intelligence without leaving the application. This plugin is highly configurable and works seamlessly across Windows, macOS, and Linux.
-        <br>
-        <br>
+        <br />
+        <br />
         Whether you prefer using a local shell command or a public API, this plugin has you covered.
-    </p>
-
-    <hr>
-
-    <h3>✨ Features</h3>
-    <ul>
+    </p> <h3><span class="section-icon">✨</span> Features</h3> <ul>
         <li>
             <strong>Integrated Context Menu:</strong> Right-click any packet in your capture to instantly perform a WHOIS lookup on its source and destination IP addresses.
         </li>
@@ -34,14 +27,7 @@
         <li>
             <strong>Fallback APIs:</strong> Configure a backup API to use if your primary service fails, ensuring you always get results.
         </li>
-    </ul>
-
-    <hr>
-
-    <h3>🚀 Getting Started</h3>
-
-    <h4>Installation</h4>
-    <ol>
+    </ul><hr /><h3>🚀 Getting Started</h3> <h4>Installation</h4> <ol> 
         <li>
             <span>⬇️</span> Download the <code>who_is_plugin.lua</code> file from this repository.
         </li>
@@ -54,33 +40,16 @@
         </li>
         <li>
             <span>🔄</span> Restart Wireshark. The plugin will now be active!
-        </li>
-    </ol>
-
-    <h4>First Run</h4>
-    <p>
+        </li> </ol> <h4>First Run</h4> <p>
         On the first launch, the plugin automatically creates a default configuration file named <code>who_is_config.json</code> in the same directory as the <code>.lua</code> file. This file contains a template to get you started.
-    </p>
-
-    <hr>
-
-    <h3>🔧 Usage & Configuration</h3>
-    <p>
+    </p><hr /><h3>🔧 Usage & Configuration</h3><p>
         Once installed, you'll find the <strong>WHOIS</strong> menu by right-clicking on any packet in your capture.
-    </p>
-
-    <h4>The <code>who_is_config.json</code> File</h4>
-    <p>
+    </p> <h4>The <code>who_is_config.json</code> File</h4>  <p>
         This is the heart of the plugin's customizability. You can manually edit this file to suit your needs.
-    </p>
-    <table>
-        <thead>
-            <tr>
-                <th>Field</th>
+    </p> <table> <thead><tr><th>Field</th>
                 <th>Description</th>
                 <th>Example Value</th>
-            </tr>
-        </thead>
+            </tr> </thead>
         <tbody>
             <tr>
                 <td><code>shell_command</code></td>
@@ -113,13 +82,9 @@
                 <td><code>"curl -H 'Authorization: Token {YOUR_API_KEY}' https://example.com/api/{ip}"</code></td>
             </tr>
         </tbody>
-    </table>
-
-    <h4>Menu Options</h4>
-    <p>
+    </table><h4>Menu Options</h4> <p>
         Your WHOIS menu gives you the following options:
-    </p>
-    <ul>
+    </p><ul>
         <li>
             <span>💻</span> <strong>Shell Lookup:</strong> This option runs the command specified in the <code>shell_command</code> field of your config file.
         </li>
@@ -135,11 +100,7 @@
         <li>
             <span>❓</span> <strong>Help:</strong> Opens a window with a quick summary of the plugin's features and instructions.
         </li>
-    </ul>
-
-    <hr>
-
-    <h3>💡 Tips</h3>
+    </ul><hr /><h3>💡 Tips</h3>
     <ul>
         <li>
             <strong>Customizing the Shell Command:</strong> You can replace the default <code>whois</code> command with any terminal command that accepts an IP address as an argument. For example, you could use <code>curl</code> to query a different web service.
